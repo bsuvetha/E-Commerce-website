@@ -1,0 +1,262 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+}
+.navbar-links a:hover{
+    text-decoration: none;
+    color: #1D232c;
+}
+.nav-toggle{
+    display: none;
+}
+/* side-navbar */
+.side-nav{
+    background-color:black;
+    width:50%;
+    height:100%;
+    color:white;
+    position:fixed;
+    top:0;
+    left:-60%;
+    padding:20px;
+    transition:2s;
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+.side-navbar-links a{
+text-decoration: none;
+color: white;
+}
+.side-navbar-links a:hover{
+text-decoration: none;
+color: white;
+}
+/* header */
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+.hbtn{
+    background-color: black;
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/* service */
+.service{
+    padding: 20px;
+}
+.service-cont-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-cont-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+.service-cont-2 div{
+    background-color: #f2f4f7;
+    border-radius: 5px;
+    padding: 10px;
+}
+.new-arrival{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.new-arrival-cont{
+    position: relative;
+    flex-basis: 20%;
+    padding: 30px;
+}
+.new-arrival button{
+    padding-left: 10%;
+padding-right: 10%;
+padding-top: 5%;
+padding-bottom: 5%;
+color: #1d232c;
+position: absolute;
+top:50%;
+left: 18%;
+border-radius: 10px;
+border: none;
+}
+
+.most-wan{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+        padding: 30px;
+
+}
+.most{
+     position: relative;
+    flex-basis: 20%;
+}
+.most-wan button{
+    padding-left: 10%;
+padding-right: 10%;
+padding-top: 5%;
+padding-bottom: 5%;
+color: #1d232c;
+position: absolute;
+top:50%;
+left: 18%;
+border-radius: 10px;
+border: none;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.news input{
+    padding: 11px;
+width: 80vw;
+margin-bottom: 10px;
+border: black solid 3px;
+}
+.news button{
+    margin: 10px;
+    color: #f2f4f7;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.news button:hover{
+    background-color: #333;
+    cursor: pointer;
+}
+.footer{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1D232c;
+    color: white;
+}
+.product-section{
+    margin-top: 20px;
+}
+.product-search{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+margin: auto;
+margin-bottom: 10px;
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+.product-search input:focus{
+    outline: none;
+
+}
+.products{
+    padding: 20px;
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.products-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+.products-box img{
+    border-radius: 10px;
+}
+
+ .contact-form{
+    background-color: #1D232C;
+    color: white;
+    width: 60%;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.contact-form h1{
+    margin-bottom: 20px;
+}
+
+.contact-form label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.contact-form button{
+    margin-top: 20px;
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*media query*/
+@media  screen and (max-width:600px) {
+    .nav-toggle{
+    display: block;
+}
+.navbar-links{
+    display:none;
+}
+.himage{
+display: none;
+}
+.service-cont-1{
+    display: none;
+}
+.service-cont-2{
+    flex-direction: column;
+}
+ .contact-form{
+        width: 90%;
+        padding: 20px;
+    }
+}
